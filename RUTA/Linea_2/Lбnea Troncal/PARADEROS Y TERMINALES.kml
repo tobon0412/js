@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PARADEROS Y TERMINALES.kml</name>
+	<StyleMap id="msn_T0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_T1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_T1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin79">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_T1">
+		<IconStyle>
+			<color>ff7f00ff</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/T.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/T-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin31">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin30</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin50</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_T1">
+		<IconStyle>
+			<color>ff7f00ff</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/T.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/T-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin77">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin64</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin79</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin302">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin33</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin53</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin33">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin64">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin30">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin53">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin50">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>PARADEROS Y TERMINALES</name>
+		<Placemark>
+			<name>Terminal Margaritas</name>
+			<open>1</open>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-08-16T18:11:12.410765109Z</begin>
+					<end>2016-08-16T18:11:12.61077332Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.26244718380505</longitude>
+				<latitude>18.97091497118014</latitude>
+				<altitude>0</altitude>
+				<heading>-2.31607507354782</heading>
+				<tilt>11.47775248264472</tilt>
+				<range>859.78890034595</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_T0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.26504972743746,18.96994273479139,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Patio de Encierro</name>
+			<open>1</open>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.24965926681334</longitude>
+				<latitude>18.98662136185871</latitude>
+				<altitude>0</altitude>
+				<heading>-6.94959013601816</heading>
+				<tilt>13.00302949992716</tilt>
+				<range>750.3404791416291</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_T0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.25173585157387,18.98617428197599,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>0- Limones</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-08-16T18:10:25.494726387Z</begin>
+					<end>2016-08-16T18:10:25.694734304Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.26693356163382</longitude>
+				<latitude>18.96495209210605</latitude>
+				<altitude>0</altitude>
+				<heading>-2.312849476858964</heading>
+				<tilt>20.34672564505356</tilt>
+				<range>335.010773691197</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin77</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.2679026725058,18.96483901476591,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>1- Tabachines</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.26024877187872</longitude>
+				<latitude>18.97363083867761</latitude>
+				<altitude>0</altitude>
+				<heading>-6.953163895259041</heading>
+				<tilt>23.42220967653838</tilt>
+				<range>518.1952455564751</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.26132227752197,18.97298245496262,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>2- Azaleas</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.25756444296565</longitude>
+				<latitude>18.97580213764369</latitude>
+				<altitude>0</altitude>
+				<heading>-2.991776078814803</heading>
+				<tilt>0</tilt>
+				<range>620.6735450739203</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.25847240239581,18.97516708556101,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>3- Pino Suárez</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.2552503159703</longitude>
+				<latitude>18.97885342158837</latitude>
+				<altitude>0</altitude>
+				<heading>-2.991019022386649</heading>
+				<tilt>4.222009903814745</tilt>
+				<range>678.5166405435126</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.25589596176023,18.97779558646998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>4- Independencia</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.25261564916508</longitude>
+				<latitude>18.98131960645133</latitude>
+				<altitude>0</altitude>
+				<heading>-2.990138284700188</heading>
+				<tilt>8.20044854958214</tilt>
+				<range>653.4851772248125</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.25372702361491,18.98062450729498,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>5- Olivos</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.24969963396865</longitude>
+				<latitude>18.98545034078851</latitude>
+				<altitude>0</altitude>
+				<heading>-2.989168076869237</heading>
+				<tilt>12.47422832327924</tilt>
+				<range>720.1013186075074</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.2509750305408,18.98423726838187,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>6- C.C. Centro Sur</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.2480029731495</longitude>
+				<latitude>18.98842530811159</latitude>
+				<altitude>0</altitude>
+				<heading>-2.988614105057347</heading>
+				<tilt>14.98765216053498</tilt>
+				<range>711.7336160530808</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.2478215363524,18.9883815401518,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>7- Periférico</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.24656436394537</longitude>
+				<latitude>18.9900725415205</latitude>
+				<altitude>0</altitude>
+				<heading>-2.988157501845965</heading>
+				<tilt>17.02513320199318</tilt>
+				<range>524.5790612061905</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.24627339220321,18.99041762160779,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>8- San Bartolo</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.24343486136581</longitude>
+				<latitude>18.99391106388049</latitude>
+				<altitude>0</altitude>
+				<heading>-2.987186770009513</heading>
+				<tilt>18.42301039132956</tilt>
+				<range>693.9776196871109</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.24337771572412,18.9942194492804,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9- Yucatán</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.23931332437455</longitude>
+				<latitude>18.99908750708919</latitude>
+				<altitude>0</altitude>
+				<heading>-2.985958406226202</heading>
+				<tilt>23.15180361726236</tilt>
+				<range>901.3408024537073</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.24082600501379,18.99756174777692,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>10- Tarascos</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.23825529343635</longitude>
+				<latitude>19.00282292455835</latitude>
+				<altitude>0</altitude>
+				<heading>-2.985576338667808</heading>
+				<tilt>26.08970700024645</tilt>
+				<range>628.9778449115694</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.23873642842074,19.00371643183536,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>11- Torrecillas</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.23631737621285</longitude>
+				<latitude>19.00656563543518</latitude>
+				<altitude>0</altitude>
+				<heading>-2.984983517786314</heading>
+				<tilt>27.13655731129866</tilt>
+				<range>1148.798970227383</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.23791982685759,19.00570121960687,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>12- Tecamachalco</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.23469909855081</longitude>
+				<latitude>19.0102807188833</latitude>
+				<altitude>0</altitude>
+				<heading>-2.984464954978449</heading>
+				<tilt>28.03755464055221</tilt>
+				<range>628.2566030567411</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.2353064013157,19.01001013788144,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>13- Club de Golf</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.23270704273332</longitude>
+				<latitude>19.01340921185892</latitude>
+				<altitude>0</altitude>
+				<heading>-2.983823756703804</heading>
+				<tilt>28.35631858359605</tilt>
+				<range>530.0299667662173</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.23340201217269,19.01299351082156,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>14- Cúmulo de Virgo</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.23046068969367</longitude>
+				<latitude>19.016113614399</latitude>
+				<altitude>0</altitude>
+				<heading>-2.983078482487928</heading>
+				<tilt>28.0863622052489</tilt>
+				<range>643.7611057290728</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.23184217206959,19.01541799742128,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>15- IMSS</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.22819069483199</longitude>
+				<latitude>19.01934308419712</latitude>
+				<altitude>0</altitude>
+				<heading>-2.982427867601695</heading>
+				<tilt>30.00248846653884</tilt>
+				<range>566.6925338329179</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.22887133575267,19.01886680833183,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>16- Zaragoza</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.22760664917318</longitude>
+				<latitude>19.02121809604452</latitude>
+				<altitude>0</altitude>
+				<heading>-2.982237550614231</heading>
+				<tilt>30.00296097125445</tilt>
+				<range>659.5573158759059</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.22806670961745,19.02027322444413,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>17- Río Atoyac</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.2257352774666</longitude>
+				<latitude>19.02221941308358</latitude>
+				<altitude>0</altitude>
+				<heading>-2.981627661303433</heading>
+				<tilt>30.00240327545739</tilt>
+				<range>652.5331765875105</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.22568280199985,19.0221068032339,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>18- Niño Poblano</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.22089010352445</longitude>
+				<latitude>19.0265645471195</latitude>
+				<altitude>0</altitude>
+				<heading>-2.980048245961067</heading>
+				<tilt>30.00309284553839</tilt>
+				<range>923.3222190045694</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.22208363413584,19.02576071197629,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>19- Juan Pablo II</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.21924979224399</longitude>
+				<latitude>19.02901594822241</latitude>
+				<altitude>0</altitude>
+				<heading>-2.979513515511886</heading>
+				<tilt>30.00307003744055</tilt>
+				<range>918.2425440064676</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.22003134776242,19.02776731103346,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>20- Alpha</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.21683055821976</longitude>
+				<latitude>19.03079215977967</latitude>
+				<altitude>0</altitude>
+				<heading>-2.978724666708295</heading>
+				<tilt>30.00297388322559</tilt>
+				<range>662.4424236272362</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.21744326066859,19.03054879761997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>21- Panteones</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.21452610668294</longitude>
+				<latitude>19.03508737332253</latitude>
+				<altitude>0</altitude>
+				<heading>-2.977973308545879</heading>
+				<tilt>30.00391918070906</tilt>
+				<range>872.9962990054022</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.21478411208302,19.03427882526696,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>22- Espinosa Yglesias</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.21286057822616</longitude>
+				<latitude>19.03749125841082</latitude>
+				<altitude>0</altitude>
+				<heading>-2.977430102407079</heading>
+				<tilt>30.00336599489237</tilt>
+				<range>866.9999050757981</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.21342615574153,19.03610755400121,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>23- Revolución</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.21239421142917</longitude>
+				<latitude>19.037940655167</latitude>
+				<altitude>0</altitude>
+				<heading>-2.977196990383058</heading>
+				<tilt>27.83212174801789</tilt>
+				<range>609.8775226932686</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.21177985473837,19.03862185084148,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>24- Santiago</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.21050151212076</longitude>
+				<latitude>19.04133522186724</latitude>
+				<altitude>0</altitude>
+				<heading>-2.976606639568597</heading>
+				<tilt>28.82365172089851</tilt>
+				<range>621.050103446032</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.21038994600228,19.04116433815596,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>25- Héroes de la Reforma</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.20738773301657</longitude>
+				<latitude>19.0454026938732</latitude>
+				<altitude>0</altitude>
+				<heading>-2.975618831864716</heading>
+				<tilt>30.00281027601661</tilt>
+				<range>655.6455653889983</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.20867445846621,19.04422052462435,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>26- Paseo Bravo</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.20587015104296</longitude>
+				<latitude>19.04835291225029</latitude>
+				<altitude>0</altitude>
+				<heading>-2.975123497907902</heading>
+				<tilt>30.00325866767213</tilt>
+				<range>725.854855636853</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.20716065763682,19.04681667376527,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>27- Mercado de Sabores</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.20435858818777</longitude>
+				<latitude>19.05127284053803</latitude>
+				<altitude>0</altitude>
+				<heading>-2.974630188812007</heading>
+				<tilt>30.00358437575567</tilt>
+				<range>798.3996787428284</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.20511037531269,19.05030515674087,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>28- Museo del Ferrocarril</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.20214727666334</longitude>
+				<latitude>19.05496476025556</latitude>
+				<altitude>0</altitude>
+				<heading>-2.973908345211841</heading>
+				<tilt>30.00228947432996</tilt>
+				<range>509.9903819012778</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.20252306837003,19.05478535652153,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>29- Nacozari</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.19932147366089</longitude>
+				<latitude>19.05708753313895</latitude>
+				<altitude>0</altitude>
+				<heading>-2.972867107849119</heading>
+				<tilt>25.47112293141415</tilt>
+				<range>348.919456792649</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.19878620055503,19.05717299464728,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>30- Diagonal Oriente</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.19564848038775</longitude>
+				<latitude>19.0627871609934</latitude>
+				<altitude>0</altitude>
+				<heading>-2.971359108722248</heading>
+				<tilt>21.50891411094223</tilt>
+				<range>441.7720539622625</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.19523820917907,19.06372739683295,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>31- Diagonal Poniente</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-05-02T16:50:32.37715936Z</begin>
+					<end>2016-05-02T16:50:32.577162379Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.19618394238719</longitude>
+				<latitude>19.06277426824517</latitude>
+				<altitude>0</altitude>
+				<heading>-2.971519543109602</heading>
+				<tilt>21.34456296198248</tilt>
+				<range>521.4565150042769</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin302</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.19745535303957,19.06316772952887,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>32- Esperanza</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2016-08-16T18:19:29.006593291Z</begin>
+					<end>2016-08-16T18:19:29.20659769Z</end>
+				</gx:TimeSpan>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-98.19950714877598</longitude>
+				<latitude>19.05911762176573</latitude>
+				<altitude>0</altitude>
+				<heading>94.06489115202251</heading>
+				<tilt>34.0429554923449</tilt>
+				<range>371.6972794544643</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin31</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-98.19969759470168,19.05935484985884,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 70%;
+        width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div>
+      <form>
+      <label value="origen"></label>
+          <input id="origen" name="origin"/>
+       <label value="destination"></label>
+          <input id="destination" name="destination"/>
+      </form>
+    </div>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="distance_helper.js"></script>
+    <script type="text/javascript" src="search.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $.ajax({
+              url: "http://aebf670862ad4996b08b749faea93206.cloudapp.net/Api/RoutesCoordinate?routes=Metrobus%20Puebla%20L%C3%ADnea%201",
+              type: "GET",
+              ContentType: "application/json"
+          }).done(function(data) {
+            alert("data");
+            console.log(data);
+          }).fail(function() {
+              alert( "error" );
+          });
+      })
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNurmHvHcXvfFc08bVnUtBsTyySuQHu9s&libraries=places&callback=initAutocomplete"
+    async defer></script>
+
+
+  </body>
+</html>

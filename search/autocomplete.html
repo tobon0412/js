@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>Place Autocomplete</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <input id="pac-input_origin" class="controls" type="text"
+        placeholder="Enter a location">
+    <input id="pac-input_destination" class="controls" type="text"
+    placeholder="Enter a location">
+    <div id="map"></div>
+<!--     <script type="text/javascript" src="../geoxml3/kmz/ZipFile.complete.js"></script>
+ --><!--     <script type="text/javascript" src="../geoxml3/ProjectedOverlay.js"></script>
+ -->    <script type="text/javascript" src="../geoxml3/kmz/geoxml3.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="distance_helper.js"></script>
+    <script type="text/javascript" src="astar.js"></script>
+    <script type="text/javascript">
+     /* var graph = new Graph([
+        [1,1,1,1],
+        [0,1,1,0],
+        [0,0,1,1]
+      ]);
+      var start = graph.grid[0][0];
+      var end = graph.grid[1][2];
+      var result = astar.search(graph, start, end);
+      console.log("astar example");
+      console.log(result);*/
+      /*var graphWithWeight = new Graph([
+        ["1,2,3","1,2,3","2,2,3","30,2,3"],
+        ["0,2,3","4,2,3","4,2,3","2,2,3"],
+        ["0,2,3","0,2,3","5,2,3","1,2,3"]
+      ]);
+      var startWithWeight = graphWithWeight.grid[0][0];
+      var endWithWeight = graphWithWeight.grid[2][3];
+      var resultWithWeight = astar.search(graphWithWeight, startWithWeight, endWithWeight);
+      // resultWithWeight is an array containing the shortest path taking into account the weight of a node
+      console.log("astar with weight example");
+      console.log(resultWithWeight);*/
+    </script>
+    <script type="text/javascript" src="autocomplete.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script type="text/javascript">
+      $(document).ready(function(){
+         $.ajax({
+              url: "http://aebf670862ad4996b08b749faea93206.cloudapp.net/Api/RoutesCoordinate?routes=Metrobus%20Puebla%20L%C3%ADnea%201",
+              type: "GET",
+              ContentType: "application/json"
+          }).done(function(data) {
+            alert("data");
+            console.log(data);
+          }).fail(function() {
+              alert( "error" );
+          });
+      })
+    </script> -->
+    <script id="jsonL1" type="application/json">
+     {
+"type": "FeatureCollection",
+"crs": { "type": "1", "route": "1", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Terminal Tlaxcalancingo", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.268745214884476, 19.032909801272449, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "1- Emiliano Zapata", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.262609910859069, 19.033509742591679, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "2- Casa de Ángeles", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.258349430039203, 19.035065879968499, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "3- Carmen Serdán", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.251371782352564, 19.03634773776384, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "4- Hospital para el Niño Poblano", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.247612009695217, 19.037264221289259, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "5- Estrellas del Sur", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.241679178248148, 19.039319198585812, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "6- Las Ánimas I y II", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.234940641805395, 19.04560816537305, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "7- 25 Poniente", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.232203479629433, 19.048919555103279, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "8- Matamoros I y II", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.227510053081133, 19.051038262354759, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "9- Juárez Serdán", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.220867860489861, 19.05637074780898, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "10- Hermanos Serdán", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.21808544756469, 19.059385951776669, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "11- San Alejandro", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.215959593530414, 19.058306710828919, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "12- Defensores de la República", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.211783934057138, 19.057375186869471, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "13- 18 Poniente", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.209663415946366, 19.0585476763484, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "14- Pestalozzi", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.205431178902813, 19.060800072418729, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "15- Santa Anita", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.201711567067122, 19.062356531177581, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "16- Constitución de 1917 - 11 Norte", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.197622422371822, 19.063434013797991, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "17- El Rayito", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.194758507759232, 19.064245187570179, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "18- China Poblana", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.192261947930319, 19.06481721744321, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "19- Los Lavaderos", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.188117576086498, 19.06509259619223, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "20- Puente Zaragoza", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.182970611029049, 19.06481449162559, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "21- Ignacio Zaragoza", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.179209520906056, 19.06441753956393, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "22- Los Fuertes I y II", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.175705385363358, 19.064006302598859, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "23- Tecnológico", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.171905016946411, 19.063530512781831, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "24- La Ciénega", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.168304597168841, 19.06289076408396, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "25- La Rosa", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.163955949890266, 19.062462540080659, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "26- 18 de Noviembre", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.159513670859667, 19.061883727871781, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "27- La Resurrección", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.1552701226463, 19.061229941963269, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "28- Universidad Tecnológica", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.149123138264855, 19.060133227888731, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "29- Rivera Anaya", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.144750008328202, 19.058606205158998, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "30- Amalucan", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.139382927689596, 19.056695866881402, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "31- Bosques", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.136295600537863, 19.056142955772589, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "32- Galaxia", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.132144708834758, 19.05526497591784, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "33- El Pilar", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.127928787154474, 19.054772354847412, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "34- Mixatlac", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.123736305555866, 19.054278567451039, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "35- Santa Mago", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.119759740955104, 19.05397239493394, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "36- Chachapa", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.11454413284099, 19.05411745440529, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Terminal Chachapa", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.11241741299024, 19.054539738651599, 0.0 ] } }
+]
+}
+
+    </script>
+
+
+    <script id="jsonL2" type="text/javascript">
+{
+"type": "FeatureCollection",
+"crs": { "type": "1", "route": "2", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Terminal Margaritas", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.265049727437457, 18.969942734791388, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Patio de Encierro", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.251735851573869, 18.986174281975991, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "0- Limones", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.267902672505798, 18.964839014765911, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "1- Tabachines", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.26132227752197, 18.972982454962619, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "2- Azaleas", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.25847240239581, 18.975167085561012, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "3- Pino Suárez", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.255895961760231, 18.977795586469981, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "4- Independencia", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.253727023614914, 18.98062450729498, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "5- Olivos", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.250975030540801, 18.984237268381872, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "6- C.C. Centro Sur", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.247821536352404, 18.988381540151799, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "7- Periférico", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.246273392203207, 18.99041762160779, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "8- San Bartolo", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.243377715724122, 18.994219449280401, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "9- Yucatán", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.240826005013787, 18.997561747776921, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "10- Tarascos", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.238736428420737, 19.003716431835361, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "11- Torrecillas", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.237919826857592, 19.00570121960687, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "12- Tecamachalco", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.235306401315697, 19.010010137881441, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "13- Club de Golf", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.233402012172689, 19.012993510821559, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "14- Cúmulo de Virgo", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.231842172069591, 19.015417997421281, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "15- IMSS", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.228871335752672, 19.018866808331829, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "16- Zaragoza", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.228066709617451, 19.020273224444129, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "17- Río Atoyac", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.225682801999852, 19.0221068032339, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "18- Niño Poblano", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.222083634135842, 19.025760711976289, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "19- Juan Pablo II", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.220031347762415, 19.027767311033461, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "20- Alpha", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.217443260668588, 19.030548797619971, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "21- Panteones", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.214784112083024, 19.034278825266959, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "22- Espinosa Yglesias", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.21342615574153, 19.036107554001209, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "23- Revolución", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.211779854738367, 19.03862185084148, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "24- Santiago", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.21038994600228, 19.041164338155959, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "25- Héroes de la Reforma", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.208674458466206, 19.04422052462435, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "26- Paseo Bravo", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.20716065763682, 19.046816673765271, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "27- Mercado de Sabores", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.205110375312685, 19.050305156740869, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "28- Museo del Ferrocarril", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.202523068370027, 19.054785356521531, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "29- Nacozari", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.198786200555034, 19.057172994647281, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "30- Diagonal Oriente", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.195238209179067, 19.063727396832949, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "31- Diagonal Poniente", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.197455353039572, 19.063167729528871, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "32- Esperanza", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Point", "coordinates": [ -98.199697594701675, 19.059354849858838, 0.0 ] } }
+]
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNurmHvHcXvfFc08bVnUtBsTyySuQHu9s&libraries=places&callback=initMap"
+    async defer></script>
+
+
+</body>
+</html>
